@@ -1,0 +1,543 @@
+/* Google Font Lato and quicksand css link */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+/* Google Font Lato and quicksand css link */
+
+/* Root color and font family */
+:root {
+    --primary-font: "Lato", sans-serif;
+    --primary-color: #15a4fa;
+    --bg-color: #1899e9;
+}
+
+
+/* Root color and font family */
+/* basic css desing file */
+/* Target all browsers */
+input[type=number] {
+    -moz-appearance: textfield;
+    /* For Firefox */
+    -webkit-appearance: none;
+    /* For Chrome, Safari, Edge */
+    appearance: none;
+    /* For modern browsers */
+}
+
+/* Optional: Hide the up/down arrows in WebKit-based browsers (like Chrome) */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* clears the 'X' from Internet Explorer */
+input[type=search]::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+input[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+/* check box color change  */
+input[type="checkbox"]:checked {
+    accent-color: var(--logo-color);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    content: "";
+    clear: both;
+}
+
+body,
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+span,
+table,
+footer,
+nav,
+div,
+section {
+    padding: 0;
+    margin: 0;
+}
+
+/* basic css style desing ended */
+/* navbar section html part start  */
+.navbar-brand {
+    font-family: var(--primary-font);
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #2d3950;
+}
+
+.navbar-nav .nav-link {
+    font-family: var(--primary-font);
+    font-size: 24px;
+    line-height: 47px;
+    font-weight: 400;
+    margin-left: 10px;
+    color: #2d3950;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none !important;
+}
+
+@media screen and (max-width:576px) {
+    .navbar-nav .nav-link {
+
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 400;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+}
+
+/* navbar section html part End */
+/* banner section css part start  */
+.banner_main {
+    width: 100%;
+    background: url(../image/Banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 200px 0px 60px 0px;
+}
+
+.b_title {
+    font-family: var(--primary-font);
+    font-size: 120px;
+    line-height: 50px;
+    font-weight: 700;
+    color: #fff;
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid var(--bg-color);
+    padding-bottom: 50px;
+}
+
+.b_sub {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    line-height: 47px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 35px;
+
+}
+
+.b_btn {
+    font-family: var(--primary-font);
+    font-size: 18px;
+    line-height: 47px;
+    font-weight: 400;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid var(--bg-color);
+
+
+
+}
+
+.bottom_icon {
+    display: block;
+    margin-top: 100px;
+    font-size: 40px;
+    color: #fff;
+}
+
+@media screen and (max-width:576px) {
+    .banner_main {
+        width: 100%;
+
+        padding: 60px 0px 40px 0px;
+    }
+
+    .b_title {
+        font-size: 60px;
+        width: 300px;
+        padding-bottom: 20px;
+    }
+
+    .b_sub {
+        font-size: 17px;
+        color: #fff;
+        margin-top: 10px;
+    }
+
+    .b_btn {
+        font-family: var(--primary-font);
+        font-size: 18px;
+        line-height: 47px;
+        font-weight: 400;
+        color: #fff;
+        padding: 10px 20px;
+        border: 1px solid var(--bg-color);
+    }
+
+    .bottom_icon {
+
+        margin-top: 25px;
+    }
+}
+
+/* banner section css part End */
+/* banner bottom section css part start  */
+.banner_bottom {
+    width: 100%;
+    background-color: #f6f9f9;
+    padding: 60px 0px 100px 0px;
+}
+
+.b_b_title {
+    font-family: var(--primary-font);
+    font-size: 40px;
+    line-height: auto;
+    font-weight: 400;
+    color: #2d3950;
+}
+
+.b_b_sub {
+    font-family: var(--primary-font);
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #999999;
+    margin-top: 20px;
+    padding: 0px 120px;
+}
+
+@media screen and (max-width:576px) {
+    .banner_bottom {
+        width: 100%;
+        padding: 40px 0px 60px 0px;
+    }
+
+    .b_b_title {
+        font-size: 30px;
+    }
+
+    .b_b_sub {
+        margin-top: 15px;
+        padding: 0px 0px;
+    }
+}
+
+/* banner bottom section css part end */
+/* icon bar css part start  */
+
+.icon {
+    padding: 40px 0px;
+}
+
+.icon_title {
+    font-family: var(--primary-font);
+    font-size: 22px;
+    line-height: auto;
+    font-weight: 400;
+    color: #2d3950;
+    margin-top: 15px;
+}
+
+.icon_sub {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #999999;
+    margin-top: 8px;
+    padding: 0px 80px;
+}
+
+@media screen and (max-width:576px) {
+    .icon {
+        padding: 40px 0px;
+    }
+
+    .icon_sub {
+
+        padding: 0px 00px;
+    }
+}
+
+/* icon bar css part end */
+
+/* gelery section css part start  */
+.gelery {
+    width: 100%;
+    background-color: #f6f9f9;
+    padding: 80px 0px 100px 0px;
+}
+
+.g_title {
+    font-family: var(--primary-font);
+    font-size: 41px;
+    line-height: auto;
+    font-weight: 400;
+    color: #2d3950;
+}
+
+.g_sub {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #909090;
+    margin-top: 8px;
+}
+
+.img {
+    position: relative;
+    width: 100%;
+
+}
+
+.g_icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(23, 151, 231, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+
+.g_icon .g_i_i {
+
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--bg-color);
+    margin: 0px 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.img:hover .g_icon {
+
+    transform: scale(1);
+    transition: all linear 0.3s;
+}
+
+
+@media screen and (max-width:576px) {
+    .gelery {
+        width: 100%;
+
+        padding: 40px 0px 50px 0px;
+    }
+
+    .g_title {
+
+        font-size: 22px;
+
+    }
+
+    .g_sub {
+
+        margin-top: 2px;
+    }
+}
+
+/* gelery section css part End */
+
+/* footer section css part start  */
+
+.footer_main {
+    width: 100%;
+    background: url(../image/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 70px 0px 110px 0px;
+}
+
+.f_title {
+    font-family: var(--primary-font);
+    font-size: 41px;
+    line-height: auto;
+    font-weight: 400;
+    color: #fff;
+}
+
+.f_Sub {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #999999;
+    margin-top: 5px;
+}
+
+form {
+    width: 50%;
+    margin: 50px auto;
+    background-color: transparent;
+}
+
+form input {
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #999999;
+    margin-top: 20px;
+    border-radius: 5px;
+
+
+}
+
+form input::placeholder {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #999999;
+    margin-top: 5px;
+
+}
+
+form input[type="text"] {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #fff;
+}
+
+form input[type="email"] {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #fff;
+}
+
+form textarea {
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid #999999;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 12px 15px;
+    font-family: var(--primary-font);
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #fff;
+
+
+}
+
+form label {
+    font-family: var(--primary-font);
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #fff;
+    margin-left: 10px;
+}
+
+form button {
+
+    padding: 10px 60px;
+    background-color: transparent;
+    border: 1px solid var(--bg-color);
+    margin-top: 20px;
+    font-family: var(--primary-font);
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+@media screen and (max-width:576px) {
+
+    .footer_main {
+        width: 100%;
+        padding: 40px 0px 40px 0px;
+    }
+
+    form {
+        width: 100%;
+        margin: 20px auto;
+        background-color: transparent;
+    }
+}
+
+/* footer section css part End  */
+/* copy section css part start  */
+
+.copy{
+    background-color: #9E9BBF;
+    padding: 15px 0px;
+    text-align: center;
+}
+.copy p,
+.copy p a {
+    font-size: var(--primary-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #000;
+}
+
+.copy p a {
+    color: red;
+    margin-left: 5px;
+}
+
+/* copy section css part End */
